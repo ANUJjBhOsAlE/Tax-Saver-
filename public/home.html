@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        
+    <div class="navdiv">
+        <!-- Logo on the left -->
+        <div class="logo">
+            <a href="#"><img src="logo.jpeg" alt="Logo" class="logo-img"></a>
+        </div>
+
+        <!-- Links and buttons on the right -->
+        <ul class="nav-links">
+            <li><a href="#contact">Contact Us</a></li>
+
+            <li><a href="#about">About Us</a></li>
+            <li><button id="signInBtn">Sign In</button></li>
+            <li><button id="signOutBtn">Sign Out</button></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Background Image -->
+    <div>
+        <img src="final home.png" alt="Background Image">
+    </div>
+
+    <!-- Sign In Modal -->
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign In</h2>
+            <form id="signInForm">
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <div><button type="submit">Submit</button></div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h2>About Us</h2>
+            <p>
+                Welcome to <strong>Tax Saver</strong> — your one-stop destination for smart and simple tax planning.
+                Our mission is to help individuals and businesses make informed financial decisions through
+                intuitive tools, personalized tips, and accurate calculations. Whether you're filing taxes or
+                learning how to save more, we're here to make the process hassle-free.
+            </p>
+            <p>
+                Our team is passionate about simplifying the tax-saving experience for everyone. We believe in
+                transparency, efficiency, and education. Thank you for choosing us to be a part of your financial journey.
+            </p>
+        </div>
+    </section>
+    <!-- Contact Us Section -->
+<!-- Contact Us Section -->
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you. Reach us through any of the following channels:</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fab fa-instagram contact-icon"></i>
+                <span>@taxsaver_official</span>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-facebook contact-icon"></i>
+                <span>/TaxSaverPage</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone contact-icon"></i>
+                <span>+91 98765 43210</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Link to JavaScript -->
+    <script src="home.js"></script>
+</body>
+</html>
